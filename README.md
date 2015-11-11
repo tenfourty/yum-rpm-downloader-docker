@@ -13,4 +13,16 @@ This example above just downloads ansible, git and curl and their dependencies, 
 
 ``docker run -v MYLOCALRPMDIR/rpms:/rpms/ yum-rpm-downloader-docker openldap openldap-clients openldap-servers``
 
+If you want to change the version of the Operating System you just need to change the FROM line - currently this has only been tested with CentOS but it should work for Fedora, RHEL and other Enterprise Linux like OSes.
+
+```
+FROM centos:latest
+
+FROM centos:7
+
+FROM centos:6.6
+
+FROM centos:5.11
+```
+
 Pull requests welcome, please raise issues in github if you find any.
