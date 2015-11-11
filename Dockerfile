@@ -9,7 +9,7 @@
 #centos6.6, 6.6 (docker/Dockerfile)
 #centos5.11, 5.11 (docker/Dockerfile)
 
-FROM centos:6.6
+FROM centos:latest
 MAINTAINER "Jeremy Brown" <jeremy@tenfourty.com>
 ENV container docker
 
